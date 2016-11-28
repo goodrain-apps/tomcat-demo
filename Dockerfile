@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER lichao <lichao@goodrain.com>
+MAINTAINER example <example@goodrain.com>
 RUN echo "Asia/Shanghai" > /etc/timezone;dpkg-reconfigure -f noninteractive tzdata
 
 RUN apt-get update && apt-get install -y curl vim net-tools && rm -rf /var/lib/apt/lists/* \
